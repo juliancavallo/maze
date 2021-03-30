@@ -51,6 +51,7 @@ button:hover{
 
 #diffSelect, #btnStartMaze {
     display: inline-block;
+    letter-spacing: 2px;
 }
 
 
