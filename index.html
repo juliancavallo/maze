@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <body>
+    <div id="page">
+
+      <div id="message-container">
+        <div id="message">
+          <h1>Congratulations!</h1>
+          <p>You won!</p>
+          <button id="btnOk">OK</button>
+        </div>
+      </div>
+      
+      <div id="menu">
+        <select id="diffSelect">
+            <option value="7">Easy</option>
+            <option value="12">Medium</option>
+            <option value="20">Hard</option>                                     
+        </select>
+        <button id="btnStartMaze">Start new game</button>
+      </div>
+
+      <div id="view">
+          <canvas id="mazeCanvas" ></canvas>
+      </div>
+
+    </div>
+
+    <script src="app.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+  </body>
+</html>
