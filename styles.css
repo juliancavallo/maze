@@ -8,10 +8,12 @@
     height: auto;
     width: auto;
     margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 body{
-    background-color: lightblue;
+    background-color: #dbeef5;
 }
 
 button, select{
@@ -44,13 +46,13 @@ button:hover{
 
 /*Menu*/
 #menu {
-    margin: auto;
-    padding: 10px;
-    height: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #diffSelect, #btnStartMaze {
-    display: inline-block;
+    margin: 10px;
     letter-spacing: 2px;
 }
 
@@ -58,8 +60,6 @@ button:hover{
 /*Canvas*/
 #mazeCanvas{
     background-color: darkslategray;
-    height: 500px;
-    width: 500px;
 }
 
 #message-container {
@@ -84,4 +84,25 @@ button:hover{
     left: 50%;
     margin-left: -150px;
     margin-top: -150px;
+}
+
+
+@media screen and (orientation:portrait) {
+    #mazeCanvas{
+        height: 80vw;
+        width: 80vw;
+    }
+}
+
+@media screen and (orientation:landscape) {
+    #mazeCanvas{
+        height: 80vh;
+        width: 80vh;        
+    }
+}
+
+@media(max-width: 500px),(max-height: 500px){
+    #diffSelect, #btnStartMaze {
+        height: 15%;
+    }
 }
