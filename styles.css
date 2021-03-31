@@ -3,7 +3,6 @@
 }
 
 #page {
-    font-family: "Segoe UI", Arial, sans-serif;
     text-align: center;
     height: auto;
     width: auto;
@@ -14,18 +13,21 @@
 
 body{
     background-color: #d9e4dd;
+    font-family:  'Montserrat', sans-serif;
+    letter-spacing: 2px;
 }
 
 button, select{
-    padding: 5px 15px;
-    text-align: center;
-    margin: auto 19px;
-    width: auto;
-    height: 40px;
-    background-color: rgba(0, 0, 0, 0.50);
-    border: none;
+    font-family: inherit;
     font-size: 15px;
+    text-align: center;
+    height: 40px;
+    width: auto;
+    padding: 5px 15px;
+    margin: auto 19px;
+    border: none;
     border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.50);
     color: white;
 }
 
@@ -53,7 +55,6 @@ button:hover{
 
 #diffSelect, #btnStartMaze {
     margin: 10px;
-    letter-spacing: 2px;
 }
 
 

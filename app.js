@@ -430,7 +430,6 @@ function Player(maze, c, _cellsize, onComplete, sprite = null) {
         fingerCount,
         fingerData
       ) {
-        console.log(direction);
         switch (direction) {
           case "up":
             check({
@@ -509,7 +508,6 @@ window.onload = function() {
   sprite.setAttribute("crossOrigin", " ");
   sprite.onload = function() {
     completeOne = true;
-    console.log(completeOne);
     isComplete();
   };
 
@@ -520,7 +518,6 @@ window.onload = function() {
   finishSprite.setAttribute("crossOrigin", " ");
   finishSprite.onload = function() {
     completeTwo = true;
-    console.log(completeTwo);
     isComplete();
   };
   
